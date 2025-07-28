@@ -1,0 +1,168 @@
+@import 'tailwindcss';
+@plugin 'daisyui';
+
+@theme {
+    /* Purple Shades */
+    --color-purple-60: #703BF7;
+    --color-purple-65: #8254F8;
+    --color-purple-70: #946CF9;
+    --color-purple-75: #DBCEFD;
+    --color-purple-90: #FFE4CC;
+    --color-purple-95: #EDE6FE;
+    --color-purple-97: #F4F0FE;
+    --color-purple-99: #FBFAFF;
+
+    /* White Shades */
+    --color-white-90: #E3E3E7;
+    --color-white-95: #F1F1F3;
+    --color-white-97: #F7F7F8;
+    --color-white-99: #FCFCFD;
+
+    /* Grey Shades */
+    --color-grey-08: #141414;
+    --color-grey-10: #1A1A1A;
+    --color-grey-15: #262626;
+    --color-grey-20: #333333;
+    --color-grey-30: #4D4D4D;
+    --color-grey-40: #666666;
+    --color-grey-50: #808080;
+    --color-grey-60: #999999;
+
+    /* ------------------------- */
+
+    /* Urbanist Font */
+    --font-urbanist: 'Urbanist', 'system-ui', 'sans-serif';
+
+    /* ------------------------- */
+
+    /* Breakpoints */
+    --breakpoint-main: 918px;
+    --breakpoint-very-small: 400px;
+}
+
+html {
+    scrollbar-color: var(--color-purple-60) transparent;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-purple-60);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+@utility primary-btn {
+    @apply py-3.5 px-5 bg-purple-60 rounded-lg cursor-pointer transition-all hover:bg-purple-65 text-nowrap;
+}
+
+@utility secondary-btn {
+    @apply py-3.5 px-5 rounded-lg cursor-pointer transition-all hover:bg-grey-20 text-nowrap;
+}
+
+@utility box-secondary-btn {
+    @apply p-3 rounded-md cursor-pointer transition-all hover:bg-grey-20;
+}
+
+@utility section-heading {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-pretty;
+}
+
+@utility flex-container {
+    @apply flex flex-col w-full justify-center items-center px-8 main:px-16 mb-20;
+}
+
+/* #region - Header */
+
+@utility nav-link {
+    @apply relative p-2 before:absolute before:-bottom-3 before:right-0 before:left-0 before:h-0.5 before:w-full before:bg-purple-60 before:transition-all before:duration-300 before:scale-x-0 group-hover:before:scale-x-100;
+}
+
+@utility nav-grid {
+    @apply grid-cols-[max-content_1fr_max-content];
+}
+
+/* #endregion */
+
+/* #region - Hero */
+
+@utility info-box {
+    @apply flex flex-col justify-center items-center lg:items-start w-full gap-x-4 p-4;
+}
+
+@utility number {
+    @apply text-2xl xl:text-4xl font-bold mb-1;
+}
+
+@utility number-label {
+    @apply text-grey-60 text-sm xl:text-lg text-pretty;
+}
+
+/* #endregion */
+
+/* #region - Services */
+
+@utility icon-label {
+    @apply text-sm max-lg:md:text-lg lg:text-xl font-medium text-pretty text-center mt-4;
+}
+
+@utility service-container {
+    @apply flex flex-col justify-center items-center w-full relative;
+}
+
+@utility service-arrow {
+    @apply absolute top-2 right-2 size-6 text-grey-30;
+}
+
+/* #endregion */
+
+/* #region - Featured Properties */
+
+@utility splide-slide {
+    @apply flex flex-col justify-center w-full px-4;
+}
+
+@utility slide-feature {
+    @apply flex justify-between items-center gap-x-2;
+}
+
+/* #endregion */
+
+/* #region - Testimonials */
+
+@utility testimonial {
+    @apply flex flex-col justify-center items-start w-full px-4;
+}
+
+@utility customer-info {
+    @apply flex justify-start items-center w-full gap-x-2;
+}
+
+/* #endregion */
+
+/* #region - FAQ */
+
+@utility accordion-content {
+    @apply flex flex-col justify-center items-start gap-y-2 border-l border-white-99 ml-5;
+}
+
+/* #endregion */
+
+/* #region - Footer */
+
+@utility footer-section {
+    @apply flex flex-col items-start gap-y-3;
+}
+
+/* #endregion */
+
+@font-face {
+    src: url('/Fonts/Urbanist-VariableFont_wght.ttf');
+    font-family: 'Urbanist';
+}

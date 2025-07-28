@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="scroll-smooth scroll-pt-10" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.">
+		<title>Estatein - Home</title>
+		<link rel="stylesheet" href="./src/CSS/main.css">
+		<link rel="icon" type="image/png" href="./src/Images/global/symbol.png">
+	</head>
+	<body class="font-urbanist bg-grey-08 text-white overflow-x-hidden w-screen">
+
+		<!-- Notification -->
+		<div class="w-full py-3 px-4 flex justify-between items-center relative shadow-sm shadow-purple-75" id="notification">
+			<p class="capitalize text-xs sm:text-base sm:text-center w-full text-pretty">✨ Discover your dream property with Estatein. <a href="#" class="underline">Learn more</a></p>
+			<button class="box-secondary-btn p-1" aria-label="Close Notification" id="close-notification">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pointer-events-none">
+  					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+				</svg>
+			</button>
+		</div>
+
+		<!-- Header -->
+		<header class="w-full flex justify-between items-center py-5 px-5 lg:px-16">
+			<nav class="w-full grid grid-cols-2 md:nav-grid justify-between items-center">
+
+				<!-- Logo -->
+				<a href="/" class="flex justify-start items-center gap-x-2">
+					<img src="./src/Images/global/symbol.png" alt="Estatein Symbol">
+					<span class="text-xl sm:text-2xl font-semibold">Estatein</span>
+				</a>
+
+				<!-- Nav Links -->
+				<ul class="hidden md:flex justify-center items-center gap-x-6 lg:gap-x-10">
+					<li class="group"><a href="#" class="nav-link">Home</a></li>
+					<li class="group"><a href="#" class="nav-link">About Us</a></li>
+					<li class="group"><a href="#" class="nav-link">Properties</a></li>
+					<li class="group"><a href="#" class="nav-link">Services</a></li>
+				</ul>
+
+				<!-- Contact Button -->
+				<a class="hidden md:block primary-btn justify-self-end" href="#">
+					<span class="nav-link">Contact Us</span>
+				</a>
+
+				<!-- Menu Button (Small screens only) -->
+				<button class="justify-self-end flex justify-center items-center md:hidden mr-3 relative box-secondary-btn" id="menu-button">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+  						<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+					</svg>
+				</button>
+
+			</nav>
+		</header>
+
+		<!-- Hero Section -->
+		<div class="grid grid-cols-1 main:grid-cols-2 place-items-center w-full main:mb-14 overflow-x-hidden" id="hero-section">
+
+			<div class="flex flex-col w-full justify-center main:pl-16 main:mt-12 px-8">
+
+				<!-- Main Heading -->
+				<div class="flex flex-col w-full mb-10">
+					<h1 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-pretty capitalize mb-4">Discover your dream property with Estatein.</h1>
+					<p class="text-grey-60 lg:text-lg font-medium text-pretty">Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
+				</div>
+
+				<!-- Buttons -->
+				<div class="flex flex-col main:flex-row w-full mb-10 main:gap-x-4 main:gap-y-0 gap-y-4">
+					<button class="secondary-btn">Learn More</button>
+					<button class="primary-btn">Browse Properties</button>
+				</div>
+
+				<!-- Achievements -->
+				<div class="grid grid-cols-2 lg:grid-cols-3 place-items-center w-full p-4 mb-10">
+					<div class="info-box">
+						<div class="number">200+</div>
+						<div class="number-label">Happy Customers</div>
+					</div>
+					<div class="info-box">
+						<div class="number">10k+</div>
+						<div class="number-label">Properties For Clients</div>
+					</div>
+					<div class="info-box col-span-2 lg:col-span-1">
+						<div class="number">16+</div>
+						<div class="number-label">Years of Experience</div>
+					</div>
+				</div>
+
+			</div>
+			
+			<!-- Hero Image -->
+			<div class="flex justify-center items-center w-full relative mb-10 main:mb-0 [grid-area:_1/1/2/2] main:[grid-area:_1/2/2/3] main:translate-x-10 main:-translate-y-6">
+				<img class="w-full h-auto" src="./src/Images/home/hero-image.webp" alt="Hero-image">
+				<div class="absolute -bottom-8 main:top-20 left-4 h-fit w-fit">
+					<img class="scale-105" src="./src/Images/home/badge.svg" alt="Badge">
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Services -->
+		<div class="grid grid-cols-2 md:grid-cols-4 place-items-center w-full px-8 gap-8 md:gap-y-0 mb-20" id="services">
+
+			<div class="service-container">
+				<img class="mb-2 md:scale-125" src="./src/Images/home/home.svg" alt="Home Icon">
+				<span class="icon-label">Find Your Dream Home</span>
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="service-arrow">
+  					<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+				</svg>
+			</div>
+			<div class="service-container">
+				<img class="mb-2 md:scale-125" src="./src/Images/home/money.svg" alt="Money Icon">
+				<span class="icon-label">Unlock Property Value</span>
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="service-arrow">
+  					<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+				</svg>
+			</div>
+			<div class="service-container">
+				<img class="mb-2 md:scale-125" src="./src/Images/home/building.svg" alt="Building Icon">
+				<span class="icon-label">Effortless Property Management</span>
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="service-arrow">
+  					<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+				</svg>
+			</div>
+			<div class="service-container">
+				<img class="mb-2 md:scale-125" src="./src/Images/home/sun.svg" alt="Sun Icon">
+				<span class="icon-label">Smart Investments. Informed Decisions</span>
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="service-arrow">
+  					<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+				</svg>
+			</div>
+
+		</div>
+
+		<!-- Featured Properties -->
+		<div class="flex-container" id="properties">
+
+			<div class="flex flex-col w-full justify-center mb-8">
+				<h2 class="section-heading">Featured Properties</h2>
+				<div class="flex justify-between items-center w-full gap-x-4">
+					<p class="text-pretty text-grey-60 font-medium text-sm">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
+					<button class="hidden sm:block secondary-btn text-nowrap">View All Properties</button>
+				</div>
+			</div>
+
+			<section class="splide w-full mb-10" aria-label="Featured Properties" data-id="property">
+				<div class="splide__track flex justify-center items-center w-full">
+					<ul class="splide__list w-full"></ul>
+				</div>
+			</section>
+
+			<div class="flex flex-col very-small:flex-row justify-between items-center w-full overflow-x-hidden">
+				<button class="sm:hidden secondary-btn text-nowrap">View All Properties</button>
+
+				<div class="flex justify-center items-center gap-x-2 overflow-hidden very-small:ml-auto">
+					<button class="prev box-secondary-btn relative" data-id="property" aria-label="Previous Property">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pointer-events-none">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+						</svg>
+					</button>
+
+					<div class="flex justify-center items-center gap-x-2">
+						<span data-id="property">01</span>
+					</div>
+
+					<button id="next" class="next box-secondary-btn relative" data-id="property" aria-label="Next Property">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pointer-events-none">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+						</svg>
+					</button>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Testimonials -->
+		<div class="flex-container" id="testimonials">
+
+			<div class="flex flex-col w-full justify-center mb-10">
+				<h2 class="section-heading">What Our Clients Say</h2>
+				<p class="text-pretty text-grey-60 font-medium text-sm">Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.</p>
+			</div>
+
+			<section class="splide w-full mb-10" aria-label="Testimonials" data-id="testimonial">
+				<div class="splide__track flex justify-center items-center w-full">
+					<ul class="splide__list w-full"></ul>
+				</div>
+			</section>
+
+			<div class="flex flex-col very-small:flex-row justify-between items-center w-full overflow-x-hidden">
+				<div class="flex justify-center items-center gap-x-2 overflow-hidden very-small:ml-auto">
+					<button class="prev box-secondary-btn relative" data-id="testimonial" aria-label="Previous Testimonial">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pointer-events-none">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+						</svg>
+					</button>
+
+					<div class="flex justify-center items-center gap-x-2">
+						<span data-id="testimonial">01</span>
+					</div>
+
+					<button id="next" class="next box-secondary-btn relative" data-id="testimonial" aria-label="Next Testimonial">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pointer-events-none">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+						</svg>
+					</button>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- FAQ -->
+		<div class="flex-container" id="faq">
+
+			<div class="flex flex-col w-full justify-center mb-10">
+				<h2 class="section-heading">Frequently Asked Questions</h2>
+				<p class="text-pretty text-grey-60 font-medium text-sm">Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.</p>
+			</div>
+
+			<div class="flex flex-col w-full md:w-8/12">
+
+				<div class="collapse collapse-arrow py-2">
+					<input type="radio" name="Accordion">
+					<div class="collapse-title">How do I search for properties on Estatein?</div>
+					<div class="collapse-content accordion-content">
+						<p class="text-grey-60">Learn how to use our user-friendly search tools to find properties that match your criteria.</p>
+						<button class="secondary-btn">Read More</button>
+					</div>
+				</div>
+
+				<div class="collapse collapse-arrow py-2">
+					<input type="radio" name="Accordion">
+					<div class="collapse-title">What documents do I need to sell my property through Estatein?</div>
+					<div class="collapse-content accordion-content">
+						<p class="text-grey-60">Find out about the necessary documentation for listing your property with us.</p>
+						<button class="secondary-btn">Read More</button>
+					</div>
+				</div>
+
+				<div class="collapse collapse-arrow py-2">
+					<input type="radio" name="Accordion">
+					<div class="collapse-title">How can I contact an Estatein agent?</div>
+					<div class="collapse-content accordion-content">
+						<p class="text-grey-60">Discover the different ways you can get in touch with our experienced agents.</p>
+						<button class="secondary-btn">Read More</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Start your journey -->
+		<div class="flex-container">
+			<div class="flex flex-col main:flex-row w-full main:w-10/12 bg-purple-60 p-10 rounded-lg gap-y-4 main:gap-x-6 main:justify-between main:items-center">
+				<div class="flex flex-col w-full">
+					<h2 class="section-heading">Start Your Real Estate Journey Today</h2>
+					<p class="text-pretty text-gray-300 font-medium text-sm">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.</p>
+				</div>
+
+				<button class="py-3.5 px-5 bg-black rounded-lg cursor-pointer transition-all text-nowrap">Explore Properties</button>
+			</div>
+		</div>
+
+		<footer class="flex-container mb-5">
+			<div class="grid grid-cols-2 lg:grid-cols-5 lg:justify-items-center w-full gap-y-10 mb-20">
+
+				<div class="flex flex-col justify-center items-start lg:self-start gap-y-5 w-full col-span-2 lg:col-span-1">
+					<!-- Logo -->
+					<a href="/" class="flex justify-start items-center gap-x-2">
+						<img src="./src/Images/global/symbol.png" alt="Estatein Symbol">
+						<span class="text-xl sm:text-2xl font-semibold">Estatein</span>
+					</a>
+
+					<!-- Input Field -->
+					<div class="flex items-center relative w-full">
+						<span class="pointer-events-none absolute left-3">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-grey-60">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+							</svg>			  
+						</span>
+						<input class="pl-10 pr-5 py-3 w-full" placeholder="Enter Your Email" name="email" type="text">
+						<span class="pointer-events-none absolute right-3 -rotate-45">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-white">
+								<path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
+							</svg>   
+						</span>
+					</div>
+
+				</div>
+
+				<div class="footer-section">
+					<span class="text-grey-60 mb-2">Home</span>
+					<a href="/#hero-section">Hero Section</a>
+					<a href="/#services">Features</a>
+					<a href="/#properties">Properties</a>
+					<a href="/#testimonials">Testimonials</a>
+					<a href="/#faq">FAQ's</a>
+				</div>
+
+				<div class="footer-section">
+					<span class="text-grey-60 mb-2">About Us</span>
+					<a href="./src/Pages/">Our Story</a>
+					<a href="./src/Pages/">Our Works</a>
+					<a href="./src/Pages/">How It works</a>
+					<a href="./src/Pages/">Our Team</a>
+					<a href="./src/Pages/">Our Clients</a>
+				</div>
+
+				<div class="footer-section">
+					<span class="text-grey-60 mb-2">Properties</span>
+					<a href="./src/Pages/">Portfolio</a>
+					<a href="./src/Pages/">Categories</a>
+				</div>
+
+				<div class="footer-section">
+					<span class="text-grey-60 mb-2">Services</span>
+					<a href="./src/Pages/">Valuation Mastery</a>
+					<a href="./src/Pages/">Strategic Marketing</a>
+					<a href="./src/Pages/">Negotiation Wizardry</a>
+					<a href="./src/Pages/">Closing Success</a>
+					<a href="./src/Pages/">Property Management</a>
+				</div>
+
+			</div>
+
+			<div class="flex flex-col main:flex-row justify-center main:justify-between items-center w-full">
+				<div class="flex justify-center items-center gap-x-10 main:gap-x-6 w-fit mb-6 main:mb-0 main:order-2">
+					<span class="p-2">
+						<svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+							<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+						</svg>
+					</span>
+					<span class="p-2">
+						<svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+							<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+						</svg>
+					</span>
+					<span class="p-2">
+						<svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+							<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+						</svg>
+					</span>
+					<span class="p-2">
+						<svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+							<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+						</svg>
+					</span>
+				</div>
+				<p>&copy; <span id="year"></span> Estatein - All rights reserved - Developed with &#10084; by <a class="underline" href="https://github.com/Omar-Ahmed85">Mostafa Ahmed</a></p>
+			</div>
+
+		</footer>
+		
+		<script src="./src/TS/home.ts" type="module"></script>
+	</body>
+</html>
