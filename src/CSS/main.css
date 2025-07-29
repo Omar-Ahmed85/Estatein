@@ -162,6 +162,14 @@ html {
 
 /* #endregion */
 
+/* #region - Aside Navbar */
+
+@utility aside-nav-link {
+    @apply block w-full text-lg px-4 py-3 hover:bg-purple-60 transition-all rounded-md;
+}
+
+/* #endregion */
+
 @font-face {
     src: url('/Fonts/Urbanist-VariableFont_wght.ttf');
     font-family: 'Urbanist';

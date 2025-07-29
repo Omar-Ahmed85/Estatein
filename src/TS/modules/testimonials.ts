@@ -1,5 +1,5 @@
 import customer1 from '/src/Images/home/customer 1.png';
-import customer2 from '/src/Images/home/customer 1.png';
+import customer2 from '/src/Images/home/customer 2.png';
 import customer3 from '/src/Images/home/customer 3.png';
 
 const testimonials = [

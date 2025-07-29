@@ -1,6 +1,6 @@
 import rustic from '/src/Images/global/rustic.webp';
 import seaside from '/src/Images/global/seaside.webp';
-import metropolitan from '/src/Images/global/seaside.webp';
+import metropolitan from '/src/Images/global/metropolitan.webp';
 
 const properties = [
     {

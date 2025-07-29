@@ -4,7 +4,7 @@ import properties from './modules/properties.ts';
 import testimonials from './modules/testimonials.ts';
 import star from '/src/Images/star.svg';
 
-// Notification
+// #region - Notification
 
 const closeButton = document.getElementById('close-notification');
 const notification = document.getElementById('notification');
@@ -12,6 +12,10 @@ const notification = document.getElementById('notification');
 closeButton?.addEventListener('click', () => {
     notification?.remove();
 }, { once: true });
+
+// #endregion
+
+/* ================================================ */
 
 /* == Carousels == */
 
@@ -228,9 +232,34 @@ function updateCounter(splide: Splide, targetElement: HTMLElement) {
 
 // #endregion
 
-/* ======================================== */
+/* ================================================ */
 
-// Year
+// #region - Year
 
-const year = document.getElementById('year') as HTMLElement;
-year.textContent = String(new Date().getFullYear());
+const currentYear = document.querySelectorAll('.year');
+currentYear.forEach((year) => {
+    year.textContent = String(new Date().getFullYear());
+});
+
+// #endregion
+
+/* ================================================ */
+
+// #region - Aside Navbar
+
+const backdrop = document.getElementById('backdrop') as HTMLElement;
+const navbar = document.querySelector('aside') as HTMLElement;
+const menuButton = document.getElementById('menu-button') as HTMLElement;
+
+menuButton?.addEventListener('click', handleNavBar);
+backdrop?.addEventListener('click', handleNavBar);
+
+function handleNavBar() {
+    backdrop.classList.toggle('hidden');
+    navbar.classList.toggle('translate-x-full');
+    document.body.classList.toggle('overflow-hidden');
+}
+
+// #endregion
+
+/* ================================================ */
