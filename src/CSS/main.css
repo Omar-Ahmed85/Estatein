@@ -173,4 +173,5 @@ html {
 @font-face {
     src: url('/Fonts/Urbanist-VariableFont_wght.ttf');
     font-family: 'Urbanist';
+    font-display: swap;
 }

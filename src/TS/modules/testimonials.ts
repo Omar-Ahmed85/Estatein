@@ -1,6 +1,6 @@
-import customer1 from '/src/Images/home/customer 1.png';
-import customer2 from '/src/Images/home/customer 2.png';
-import customer3 from '/src/Images/home/customer 3.png';
+import customer1 from '/src/Images/home/customer 1.webp';
+import customer2 from '/src/Images/home/customer 2.webp';
+import customer3 from '/src/Images/home/customer 3.webp';
 
 const testimonials = [
     {
