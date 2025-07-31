@@ -1,8 +1,12 @@
 import '@splidejs/splide/css';
 import Splide from '@splidejs/splide';
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
 import properties from './modules/properties.ts';
 import testimonials from './modules/testimonials.ts';
 import star from '/src/Images/star.svg';
+
+injectSpeedInsights();
 
 // #region - Notification
 
@@ -17,9 +21,7 @@ closeButton?.addEventListener('click', () => {
 
 /* ================================================ */
 
-/* == Carousels == */
-
-// #region - Adding elements to page
+// #region - Carousels
 
 function addPropertiesToPage() {
 
@@ -152,10 +154,6 @@ function addTestimonialsToPage() {
 
 addTestimonialsToPage();
 
-// #endregion
-
-// #region - Instantiating carousels
-
 const propertiesSection = document.querySelector('section[aria-label="Featured Properties"]') as HTMLElement;
 const propertiesCarousel = new Splide(propertiesSection, {
     arrows: false,
@@ -169,7 +167,9 @@ const propertiesCarousel = new Splide(propertiesSection, {
         700: {
             perPage: 2
         }
-    }
+    },
+    perMove: 1,
+    lazyLoad: 'sequential'
 });
 
 const testimonialsSection = document.querySelector('section[aria-label="Testimonials"]') as HTMLElement;
@@ -185,15 +185,12 @@ const testimonialsCarousel = new Splide(testimonialsSection, {
         700: {
             perPage: 2
         }
-    }
+    },
+    perMove: 1,
 });
 
 propertiesCarousel.mount();
 testimonialsCarousel.mount();
-
-// #endregion
-
-// #region - Adding event listeners
 
 window.addEventListener('click', (event) => {
     const target = event.target as HTMLElement;
