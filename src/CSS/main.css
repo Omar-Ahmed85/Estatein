@@ -38,6 +38,11 @@
     /* Breakpoints */
     --breakpoint-main: 918px;
     --breakpoint-very-small: 400px;
+
+    /* ------------------------- */
+
+    /* Easing functions */
+    --ease-glide: linear(0, 0.003 0.4%, 0.012 0.9%, 0.027 1.4%, 0.05 2%, 0.111 3.3%, 0.316 7.2%, 0.411 9.2%, 0.466 10.5%, 0.517 11.8%, 0.566 13.2%, 0.611 14.6%, 0.653 16.1%, 0.694 17.7%, 0.732 19.4%, 0.765 21.1%, 0.796 22.9%, 0.824 24.8%, 0.849 26.8%, 0.872 28.9%, 0.892 31.1%, 0.91 33.4%, 0.925 35.8%, 0.939 38.4%, 0.95 41.1%, 0.961 44.1%, 0.97 47.4%, 0.977 50.9%, 0.987 58.7%, 0.994 68.4%, 0.998 81.1%, 1);
 }
 
 html {
@@ -78,6 +83,18 @@ html {
     @apply flex flex-col w-full justify-center items-center px-8 main:px-16 mb-20;
 }
 
+@utility inactive-left {
+    @apply opacity-0 -translate-x-1/3;
+}
+
+@utility inactive-right {
+    @apply opacity-0 translate-x-1/3;
+}
+
+@utility active {
+    @apply opacity-100 translate-0 transition-all duration-1500 ease-glide;
+}
+
 /* #region - Header */
 
 @utility nav-link {
@@ -87,6 +104,7 @@ html {
 @utility nav-grid {
     @apply grid-cols-[max-content_1fr_max-content];
 }
+
 
 /* #endregion */
 

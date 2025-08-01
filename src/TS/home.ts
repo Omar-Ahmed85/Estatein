@@ -1,12 +1,10 @@
 import '@splidejs/splide/css';
 import Splide from '@splidejs/splide';
-import { injectSpeedInsights } from '@vercel/speed-insights';
 
 import properties from './modules/properties.ts';
 import testimonials from './modules/testimonials.ts';
 import star from '/src/Images/star.svg';
 
-injectSpeedInsights();
 
 // #region - Notification
 
@@ -168,8 +166,7 @@ const propertiesCarousel = new Splide(propertiesSection, {
             perPage: 2
         }
     },
-    perMove: 1,
-    lazyLoad: 'sequential'
+    perMove: 1
 });
 
 const testimonialsSection = document.querySelector('section[aria-label="Testimonials"]') as HTMLElement;
@@ -260,3 +257,61 @@ function handleNavBar() {
 // #endregion
 
 /* ================================================ */
+
+// #region - Increasing numbers
+
+const numbers = document.querySelectorAll('.number');
+const duration = 3000;
+
+let startTime: number;
+function countUp(timestamp: number) {
+    if (!startTime) {
+        startTime = timestamp;
+    }
+
+    const elapsedTime = timestamp - startTime;
+    const progress = Math.min(elapsedTime / duration, 1);
+
+    numbers.forEach((number) => {
+        const target = Number(number.getAttribute('data-value'));
+        const current = Math.floor(progress * target);
+        number.textContent = `${current}+`;
+    });
+
+    if (progress < 1) {
+        requestAnimationFrame(countUp);
+    }
+}
+
+// #endregion
+
+/* ================================================ */
+
+// #region - Scroll-based animations
+
+const elements = document.querySelectorAll('[data-scroll="true"]');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+
+            entry.target.classList.remove('inactive-left', 'inactive-right');
+            entry.target.classList.add('active');
+
+            if (entry.target.parentElement?.id == 'hero-section') {
+                setTimeout(() => {
+                    requestAnimationFrame(countUp);
+                }, 500);
+            }
+
+            observer.unobserve(entry.target);
+        }
+
+    });
+}, {
+    threshold: 0.3
+});
+
+elements.forEach((element) => observer.observe(element));
+
+// #endregion

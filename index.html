@@ -33,13 +33,13 @@
 				<!-- Nav Links -->
 				<ul class="hidden md:flex justify-center items-center gap-x-6 lg:gap-x-10">
 					<li class="group"><a href="/" class="nav-link">Home</a></li>
-					<li class="group"><a href="/src/Pages/about.html" class="nav-link">About Us</a></li>
-					<li class="group"><a href="/src/Pages/properties.html" class="nav-link">Properties</a></li>
-					<li class="group"><a href="/src/Pages/services.html" class="nav-link">Services</a></li>
+					<li class="group"><a href="#" class="nav-link">About Us</a></li>
+					<li class="group"><a href="#" class="nav-link">Properties</a></li>
+					<li class="group"><a href="#" class="nav-link">Services</a></li>
 				</ul>
 
 				<!-- Contact Button -->
-				<a class="hidden md:block primary-btn justify-self-end" href="/src/Pages/contact.html">
+				<a class="hidden md:block primary-btn justify-self-end" href="#">
 					<span class="nav-link">Contact Us</span>
 				</a>
 
@@ -67,10 +67,10 @@
 				<nav class="flex w-full justify-start items-start py-2">
 					<ul class="flex flex-col justify-start items-start gap-y-2 w-full">
 						<li class="w-full"><a href="/" class="aside-nav-link">Home</a></li>
-						<li class="w-full"><a href="/src/Pages/about.html" class="aside-nav-link">About Us</a></li>
-						<li class="w-full"><a href="/src/Pages/properties.html" class="aside-nav-link">Properties</a></li>
-						<li class="w-full"><a href="/src/Pages/services.html" class="aside-nav-link">Services</a></li>
-						<li class="w-full"><a href="/src/Pages/contact.html" class="aside-nav-link">Contact Us</a></li>
+						<li class="w-full"><a href="#" class="aside-nav-link">About Us</a></li>
+						<li class="w-full"><a href="#" class="aside-nav-link">Properties</a></li>
+						<li class="w-full"><a href="#" class="aside-nav-link">Services</a></li>
+						<li class="w-full"><a href="#" class="aside-nav-link">Contact Us</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -104,7 +104,7 @@
 		<!-- Hero Section -->
 		<div class="grid grid-cols-1 main:grid-cols-2 place-items-center w-full main:mb-14 overflow-x-hidden" id="hero-section">
 
-			<div class="flex flex-col w-full justify-center main:pl-16 main:mt-12 px-8">
+			<div class="flex flex-col w-full justify-center main:pl-16 main:mt-12 px-8 inactive-left" data-scroll="true">
 
 				<!-- Main Heading -->
 				<div class="flex flex-col w-full mb-10">
@@ -121,15 +121,15 @@
 				<!-- Achievements -->
 				<div class="grid grid-cols-2 lg:grid-cols-3 place-items-center w-full p-4 mb-10">
 					<div class="info-box">
-						<div class="number">200+</div>
+						<div class="number" data-value="500">0</div>
 						<div class="number-label">Happy Customers</div>
 					</div>
 					<div class="info-box">
-						<div class="number">10k+</div>
+						<div class="number" data-value="2500">0</div>
 						<div class="number-label">Properties For Clients</div>
 					</div>
 					<div class="info-box col-span-2 lg:col-span-1">
-						<div class="number">16+</div>
+						<div class="number" data-value="16">0</div>
 						<div class="number-label">Years of Experience</div>
 					</div>
 				</div>
@@ -137,7 +137,7 @@
 			</div>
 			
 			<!-- Hero Image -->
-			<div class="flex justify-center items-center w-full relative mb-10 main:mb-0 [grid-area:_1/1/2/2] main:[grid-area:_1/2/2/3] main:translate-x-10 main:-translate-y-6">
+			<div class="flex justify-center items-center w-full relative mb-10 main:mb-0 [grid-area:_1/1/2/2] main:[grid-area:_1/2/2/3] main:translate-x-10 main:-translate-y-6" data-scroll="true">
 				<img class="w-full h-auto" src="./src/Images/home/hero-image.webp" alt="Hero-image">
 				<div class="absolute -bottom-8 main:top-20 left-4 h-fit w-fit">
 					<img class="scale-105" src="./src/Images/home/badge.svg" alt="Badge">
@@ -147,7 +147,7 @@
 		</div>
 
 		<!-- Services -->
-		<div class="grid grid-cols-2 md:grid-cols-4 place-items-center w-full px-8 gap-8 md:gap-y-0 mb-20" id="services">
+		<div class="grid grid-cols-2 md:grid-cols-4 place-items-center w-full px-8 gap-8 md:gap-y-0 mb-20 inactive-right" id="services" data-scroll="true">
 
 			<div class="service-container">
 				<img class="mb-2 md:scale-125" src="./src/Images/home/home.svg" alt="Home Icon">
@@ -185,7 +185,7 @@
 		</div>
 
 		<!-- Featured Properties -->
-		<div class="flex-container" id="properties">
+		<div class="flex-container inactive-left" id="properties" data-scroll="true">
 
 			<div class="flex flex-col w-full justify-center mb-8">
 				<h2 class="section-heading">Featured Properties</h2>
@@ -227,7 +227,7 @@
 		</div>
 
 		<!-- Testimonials -->
-		<div class="flex-container" id="testimonials">
+		<div class="flex-container inactive-right" id="testimonials" data-scroll="true">
 
 			<div class="flex flex-col w-full justify-center mb-10">
 				<h2 class="section-heading">What Our Clients Say</h2>
@@ -263,7 +263,7 @@
 		</div>
 
 		<!-- FAQ -->
-		<div class="flex-container" id="faq">
+		<div class="flex-container inactive-left" id="faq" data-scroll="true">
 
 			<div class="flex flex-col w-full justify-center mb-10">
 				<h2 class="section-heading">Frequently Asked Questions</h2>
@@ -303,7 +303,7 @@
 		</div>
 
 		<!-- Start your journey -->
-		<div class="flex-container">
+		<div class="flex-container inactive-right" data-scroll="true">
 			<div class="flex flex-col main:flex-row w-full main:w-10/12 bg-purple-60 p-10 rounded-lg gap-y-4 main:gap-x-6 main:justify-between main:items-center">
 				<div class="flex flex-col w-full">
 					<h2 class="section-heading">Start Your Real Estate Journey Today</h2>
@@ -352,26 +352,26 @@
 
 				<div class="footer-section">
 					<span class="text-grey-60 mb-2">About Us</span>
-					<a href="/src/Pages/about.html">Our Story</a>
-					<a href="/src/Pages/about.html">Our Works</a>
-					<a href="/src/Pages/about.html">How It works</a>
-					<a href="/src/Pages/about.html">Our Team</a>
-					<a href="/src/Pages/about.html">Our Clients</a>
+					<a href="#">Our Story</a>
+					<a href="#">Our Works</a>
+					<a href="#">How It works</a>
+					<a href="#">Our Team</a>
+					<a href="#">Our Clients</a>
 				</div>
 
 				<div class="footer-section">
 					<span class="text-grey-60 mb-2">Properties</span>
-					<a href="/src/Pages/properties.html">Portfolio</a>
-					<a href="/src/Pages/properties.html">Categories</a>
+					<a href="#">Portfolio</a>
+					<a href="#">Categories</a>
 				</div>
 
 				<div class="footer-section">
 					<span class="text-grey-60 mb-2">Services</span>
-					<a href="/src/Pages/services.html">Valuation Mastery</a>
-					<a href="/src/Pages/services.html">Strategic Marketing</a>
-					<a href="/src/Pages/services.html">Negotiation Wizardry</a>
-					<a href="/src/Pages/services.html">Closing Success</a>
-					<a href="/src/Pages/services.html">Property Management</a>
+					<a href="#">Valuation Mastery</a>
+					<a href="#">Strategic Marketing</a>
+					<a href="#">Negotiation Wizardry</a>
+					<a href="#">Closing Success</a>
+					<a href="#">Property Management</a>
 				</div>
 
 			</div>
