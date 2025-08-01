@@ -131,7 +131,7 @@ html {
 }
 
 @utility service-container {
-    @apply flex flex-col justify-center items-center w-full relative;
+    @apply flex flex-col justify-center items-center w-full h-full relative border border-grey-20 py-4 px-8 rounded-lg;
 }
 
 @utility service-arrow {
