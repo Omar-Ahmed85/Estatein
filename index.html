@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth scroll-pt-10" lang="en">
+<html class="scroll-smooth scroll-pt-10 overflow-x-hidden" lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +30,7 @@
 			}
 		</script>
 	</head>
-	<body class="font-urbanist bg-grey-08 text-white overflow-x-hidden w-screen">
+	<body class="font-urbanist bg-grey-08 text-white overflow-x-hidden max-w-full">
 
 		<!-- Notification -->
 		<div class="w-full py-3 px-4 flex justify-between items-center relative shadow-sm shadow-purple-75" id="notification">
@@ -79,7 +79,7 @@
 		<div class="hidden fixed inset-0 w-full h-full bg-black/50 z-40 backdrop-blur-xs" id="backdrop"></div>
 
 		<!-- Aside Navbar -->
-		<aside class="flex flex-col justify-between p-8 h-full w-72 fixed top-0 right-0 bottom-0 z-50 bg-grey-08 translate-x-full transition-all duration-500 ease-in-out">
+		<aside class="flex flex-col justify-between p-8 h-full w-72 fixed top-0 right-0 bottom-0 z-50 bg-grey-08 transition-all translate-x-full duration-500 ease-in-out">
 
 			<div class="flex flex-col w-full justify-center items-start gap-y-4">
 				<a href="/" class="flex justify-start items-center gap-x-2 mb-6">

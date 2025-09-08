@@ -251,7 +251,7 @@ backdrop?.addEventListener('click', handleNavBar);
 function handleNavBar() {
     backdrop.classList.toggle('hidden');
     navbar.classList.toggle('translate-x-full');
-    document.body.classList.toggle('overflow-hidden');
+    document.body.classList.toggle('overflow-hidden'); // To Enable/Disable scrolling.
 }
 
 // #endregion
